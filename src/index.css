@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 280 50% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 280 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 50% 10%;
+
+    /* Purple gradient primary colors from #5c1c72 */
+    --primary: 286 60% 27%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Lighter purple from #8b2aab */
+    --secondary: 286 60% 42%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Very light purple from #d5a1e7 */
+    --muted: 286 45% 88%;
+    --muted-foreground: 280 30% 40%;
+
+    /* Mid purple from #b04bd2 */
+    --accent: 286 65% 57%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 286 20% 90%;
+    --input: 286 20% 90%;
+    --ring: 286 60% 42%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar using darkest purple from #2e0e39 */
+    --sidebar-background: 287 64% 14%;
+    --sidebar-foreground: 286 45% 88%;
+    --sidebar-primary: 286 60% 27%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 286 60% 20%;
+    --sidebar-accent-foreground: 286 45% 88%;
+    --sidebar-border: 286 40% 18%;
+    --sidebar-ring: 286 60% 42%;
+
+    /* Gradient colors */
+    --gradient-start: 286 60% 27%;
+    --gradient-end: 286 65% 57%;
+  }
+
+  .dark {
+    /* Dark mode with purple theme from #2e0e39 */
+    --background: 287 64% 14%;
+    --foreground: 286 45% 88%;
+
+    --card: 286 60% 20%;
+    --card-foreground: 286 45% 88%;
+
+    --popover: 286 60% 20%;
+    --popover-foreground: 286 45% 88%;
+
+    /* Lighter purple in dark mode */
+    --primary: 286 65% 70%;
+    --primary-foreground: 287 64% 14%;
+
+    --secondary: 286 60% 35%;
+    --secondary-foreground: 286 45% 88%;
+
+    --muted: 286 40% 25%;
+    --muted-foreground: 286 30% 65%;
+
+    --accent: 286 60% 50%;
+    --accent-foreground: 286 45% 88%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 286 45% 88%;
+
+    --border: 286 40% 25%;
+    --input: 286 40% 25%;
+    --ring: 286 65% 70%;
+
+    --sidebar-background: 287 70% 10%;
+    --sidebar-foreground: 286 45% 88%;
+    --sidebar-primary: 286 65% 57%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 286 60% 20%;
+    --sidebar-accent-foreground: 286 45% 88%;
+    --sidebar-border: 286 50% 15%;
+    --sidebar-ring: 286 65% 70%;
+
+    --gradient-start: 286 60% 27%;
+    --gradient-end: 286 65% 57%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
