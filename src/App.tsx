@@ -13,6 +13,7 @@ import Profile from '@/pages/Profile';
 import NewPost from '@/pages/NewPost';
 import Notifications from '@/pages/Notifications';
 import Chats from '@/pages/Chats';
+import Chat from '@/pages/Chat';
 import Search from '@/pages/Search';
 import Investment from '@/pages/Investment';
 import NotFound from "./pages/NotFound";
@@ -58,6 +59,7 @@ function AppContent() {
       <Route path="/new-post" element={user ? <NewPost /> : <Navigate to="/auth" />} />
       <Route path="/notifications" element={user ? <Notifications /> : <Navigate to="/auth" />} />
       <Route path="/chats" element={user ? <Chats /> : <Navigate to="/auth" />} />
+      <Route path="/chat/:id" element={user ? <Chat /> : <Navigate to="/auth" />} />
       <Route path="/search" element={user ? <Search /> : <Navigate to="/auth" />} />
       <Route path="/investment/:id" element={user ? <Investment /> : <Navigate to="/auth" />} />
       <Route path="*" element={<NotFound />} />

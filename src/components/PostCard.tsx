@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -17,6 +18,7 @@ export default function PostCard({ post, onUpdate }: PostCardProps) {
   const [liked, setLiked] = useState(false);
   const [loading, setLoading] = useState(false);
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const handleLike = async () => {
     setLoading(true);
@@ -65,14 +67,24 @@ export default function PostCard({ post, onUpdate }: PostCardProps) {
     }
   };
 
+  const handleProfileClick = () => {
+    navigate(`/profile/${post.user_id}`);
+  };
+
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
       <CardHeader className="flex flex-row items-center gap-4">
-        <Avatar>
+        <Avatar 
+          className="cursor-pointer hover:opacity-80 transition-opacity"
+          onClick={handleProfileClick}
+        >
           <AvatarImage src={post.profiles?.avatar_url} />
           <AvatarFallback>{post.profiles?.full_name?.[0] || 'U'}</AvatarFallback>
         </Avatar>
-        <div className="flex-1">
+        <div 
+          className="flex-1 cursor-pointer hover:opacity-80 transition-opacity"
+          onClick={handleProfileClick}
+        >
           <p className="font-semibold">{post.profiles?.full_name}</p>
           <p className="text-sm text-muted-foreground">
             {formatDistanceToNow(new Date(post.created_at), { addSuffix: true })}
