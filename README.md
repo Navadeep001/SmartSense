@@ -55,7 +55,6 @@ Think of it as **LinkedIn for innovation and investment**.
 |-----------|-------------|
 | **Frontend** | React / Next.js + Tailwind CSS |
 | **Backend** | Firebase / Supabase (Auth + DB + Storage) |
-| **Design** | Figma |
 | **Hosting** | Vercel / Netlify |
 | **Tools** | Cursor, Applix (for mobile build), GitHub, Canva |
 
