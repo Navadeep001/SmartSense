@@ -10,8 +10,7 @@ Built for a 24-hour hackathon, this project enables users to **share startup ide
 
 ## 🧠 Problem Statement
 
-Early-stage innovators, especially in smaller towns or universities, struggle to find investors or mentors to take their ideas forward.  
-At the same time, investors find it difficult to discover promising projects early.  
+Innovators from smaller towns, universities and undeserved regions struggle to access mentorship, funding, and visibility, while investors find it difficult to discover promising early-stage ideas outside major startup hubs. Existing incubation models remain slow, location-dependant, and exclusive, leaving a large pool of untapped talent disconnected from opportunities. There is a need for an open, digital platform that democratizes innovation and bridges this gap.  
 
 **Traditional incubation is location-bound, slow, and exclusive.**  
 We aim to make innovation **open, digital, and accessible.**
@@ -26,39 +25,8 @@ The **Virtual Incubation Hub** is a web/mobile platform where:
 - 🧭 **Mentors** can guide startups through feedback, discussions, and evaluations.
 
 Think of it as **LinkedIn for innovation and investment**.
+<br>
+The Virtual Incubation Hub is a digital-first web and mobile platform designed to bridge the gap between early-stage innovators and the wider ecosystem of investors and mentors. instead of waiting to enter a traditional incubator or accelerator, innovators can directly can showcase their startup ideas, research phototypes, market validation effects, and funding needs in one structured space that increases visibility and credibility. On the other side, investors gain an organised discovery environment where they can browse opportunities by sector, technology, impact area or stage, allowing them to spot promising concepts much earlier than conventional deal flow channels. Mentors and domain experts can plug into the platform to support these young startups through feedback, structured evaluations, mile stone tracker,a nd guided learning--helping them refine their idea into a fundable and scalable venture. By combining elements of social networking, startup incubation, and investment match making into a seamless experience, the Virtual Incubation Hub functions like a "LinkedIn for innovation," where anyone with a strong idea can be discovered, supported, and accelerated regardless of their background or location. 
 
 ---
-
-## ⚙️ Features
-
-### 👨‍🔬 For Innovators
-- Post startup ideas with title, description, funding goal, and prototype link.
-- Control visibility (public / private / teaser mode).
-- Receive likes, comments, and connection requests.
-
-### 💰 For Investors
-- Browse or search innovative ideas by category.
-- Like, bookmark, or connect with founders.
-- View recommended startups using AI-driven matching (future scope).
-
-### 🌍 Common Features
-- Role-based signup (Innovator / Investor).
-- Personalized dashboards and newsfeed.
-- Messaging & notifications system.
-- Modern, mobile-friendly UI.
-
----
-
-## 🧩 Tech Stack
-
-| Category | Technology |
-|-----------|-------------|
-| **Frontend** | React / Next.js + Tailwind CSS |
-| **Backend** | Firebase / Supabase (Auth + DB + Storage) |
-| **Hosting** | Vercel / Netlify |
-| **Tools** | Cursor, Applix (for mobile build), GitHub, Canva |
-
----
-
-## 🧱 Architecture Overview
 
