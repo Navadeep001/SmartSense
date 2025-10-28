@@ -107,3 +107,13 @@ This helps investors track a project’s evolution over time.
 
 ## 🧭 App Flow Diagram
 
+
+---
+
+| Name | Role | Responsibility |
+|------|------|----------------|
+| Navadeep Maddala | Developer | Typescript + Supabase Integration |
+| Praneeth | Idea | Vision, Strategic Direction |
+| Varshini | Logo Designer | Canva |
+| Rasa Devi | Pitch & Docs | Presentation |
+
